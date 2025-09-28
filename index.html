@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学科套卷导航</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .header {
+            text-align: center;
+            margin: 20px 0 30px;
+            color: #2c3e50;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+        
+        .header p {
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+        
+        .grade-group {
+            width: 100%;
+            max-width: 500px;
+            margin-bottom: 25px;
+        }
+        
+        .grade-title {
+            font-size: 18px;
+            color: #3498db;
+            margin-bottom: 15px;
+            padding-left: 10px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            width: 100%;
+        }
+        
+        .subject-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 120px;
+            text-decoration: none;
+        }
+        
+        .subject-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+        
+        .subject-card h2 {
+            font-size: 18px;
+            color: #3498db;
+            margin-bottom: 8px;
+        }
+        
+        .subject-card p {
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+        
+        .subject-icon {
+            width: 40px;
+            height: 40px;
+            background: #3498db;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 12px;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 12px;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 480px) {
+            .container {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+            
+            .subject-card {
+                padding: 15px;
+                min-height: 100px;
+            }
+            
+            .subject-card h2 {
+                font-size: 16px;
+            }
+            
+            .grade-title {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>学科套卷导航</h1>
+        <p>选择你所需要的套卷</p>
+    </div>
+    
+    <!-- 高一组 -->
+    <div class="grade-group">
+        <h2 class="grade-title">高一</h2>
+        <div class="container">
+            <a href="https://m.souke.xdf.cn/item/-22-GBQ26368.html" class="subject-card">
+                <div class="subject-icon">英</div>
+                <h2>高一英语（下）</h2>
+                <p>高一英语套卷</p>
+            </a>
+            
+            <a href="https://m.souke.xdf.cn/item/-22-GBQ26368.html" class="subject-card">
+                <div class="subject-icon">数</div>
+                <h2>高一数学（下）</h2>
+                <p>高一数学套卷</p>
+            </a>
+            
+            <a href="https://m.souke.xdf.cn/item/-22-GBQ26368.html" class="subject-card">
+                <div class="subject-icon">物</div>
+                <h2>高一物理（下）</h2>
+                <p>高一物理套卷</p>
+            </a>
+            
+            <a href="https://m.souke.xdf.cn/item/-22-GBQ26368.html" class="subject-card">
+                <div class="subject-icon">化</div>
+                <h2>高一化学（下）</h2>
+                <p>高一化学套卷</p>
+            </a>
+        </div>
+    </div>
+    
+    <!-- 高二组 -->
+    <div class="grade-group">
+        <h2 class="grade-title">高二</h2>
+        <div class="container">
+            <a href="https://m.souke.xdf.cn/item/-22-GBQ26368.html" class="subject-card">
+                <div class="subject-icon">英</div>
+                <h2>高二英语（下）</h2>
+                <p>高二英语套卷</p>
+            </a>
+            
+            <a href="https://m.souke.xdf.cn/item/-22-GBQ26368.html" class="subject-card">
+                <div class="subject-icon">数</div>
+                <h2>高二数学（下）</h2>
+                <p>高二数学套卷</p>
+            </a>
+            
+            <a href="https://m.souke.xdf.cn/item/-22-GBQ26368.html" class="subject-card">
+                <div class="subject-icon">物</div>
+                <h2>高二物理（下）</h2>
+                <p>高二物理套卷</p>
+            </a>
+            
+            <a href="https://m.souke.xdf.cn/item/-22-GBQ26368.html" class="subject-card">
+                <div class="subject-icon">化</div>
+                <h2>高二化学（下）</h2>
+                <p>高二化学套卷</p>
+            </a>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>© 2025 新东方济南学校高中部 | 版权所有</p>
+    </div>
+</body>
+</html>
